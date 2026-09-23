@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Produk - Supplier Kanebo</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-inner">
+        <a href="index.html" class="brand">
+            <img src="images/logo/logo.png" alt="Supplier Kanebo">
+            <div class="brand-text">
+                <strong>SUPPLIER KANEBO</strong>
+                <span>Kain Lap Berkualitas</span>
+            </div>
+        </a>
+
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">☰</button>
+
+        <nav id="navbar">
+            <a href="index.html">Beranda</a>
+            <a href="tentang.html">Tentang Kami</a>
+            <a href="katalog.html" class="active">Katalog</a>
+            <a href="berita.html">Berita</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </div>
+</header>
+
+<section class="page-header">
+    <div class="container">
+        <span class="section-label">PRODUK KAMI</span>
+        <h1>Katalog Produk</h1>
+        <p>Pilihan kain lap Kanebo untuk berbagai kebutuhan.</p>
+    </div>
+</section>
+
+<section class="catalog">
+    <div class="catalog-top">
+        <div><h2>Produk Kanebo</h2><p>Silakan pilih produk yang ingin Anda lihat.</p></div>
+        <div class="search-box">
+            <input type="search" id="searchProduct" placeholder="Cari produk..." onkeyup="searchProduct()">
+        </div>
+    </div>
+
+    <div class="catalog-grid" id="catalogGrid">
+        <article class="catalog-card">
+    <div class="catalog-image">
+        <img src="images/produk/kanebo-1.jpg" alt="Kanebo Premium" loading="lazy">
+        <span class="product-label">Produk</span>
+    </div>
+    <div class="catalog-info">
+        <h3>Kanebo Premium</h3>
+        <p>Kain lap Kanebo dengan bahan lembut dan cocok untuk berbagai kebutuhan.</p>
+        <div class="product-meta"><span>✓ Berkualitas</span><span>✓ Grosir</span></div>
+        <a href="kontak.html" class="product-btn">Tanya Produk</a>
+    </div>
+</article>
+<article class="catalog-card">
+    <div class="catalog-image">
+        <img src="images/produk/kanebo-2.jpg" alt="Kanebo Ukuran Besar" loading="lazy">
+        <span class="product-label">Produk</span>
+    </div>
+    <div class="catalog-info">
+        <h3>Kanebo Ukuran Besar</h3>
+        <p>Pilihan kain lap berukuran besar untuk kebutuhan pembersihan.</p>
+        <div class="product-meta"><span>✓ Ukuran besar</span><span>✓ Grosir</span></div>
+        <a href="kontak.html" class="product-btn">Tanya Produk</a>
+    </div>
+</article>
+<article class="catalog-card">
+    <div class="catalog-image">
+        <img src="images/produk/kanebo-3.jpg" alt="Kanebo Grosir" loading="lazy">
+        <span class="product-label">Grosir</span>
+    </div>
+    <div class="catalog-info">
+        <h3>Kanebo Grosir</h3>
+        <p>Pilihan untuk toko, reseller, distributor dan pembelian jumlah banyak.</p>
+        <div class="product-meta"><span>✓ Pembelian banyak</span><span>✓ Supplier</span></div>
+        <a href="kontak.html" class="product-btn">Tanya Produk</a>
+    </div>
+</article>
+<article class="catalog-card">
+    <div class="catalog-image">
+        <img src="images/produk/kanebo-4.jpg" alt="Kanebo Serbaguna" loading="lazy">
+        <span class="product-label">Produk</span>
+    </div>
+    <div class="catalog-info">
+        <h3>Kanebo Serbaguna</h3>
+        <p>Dapat digunakan untuk kendaraan, rumah, toko dan berbagai kebutuhan lainnya.</p>
+        <div class="product-meta"><span>✓ Serbaguna</span><span>✓ Siap pesan</span></div>
+        <a href="kontak.html" class="product-btn">Tanya Produk</a>
+    </div>
+</article>
+    </div>
+
+    <div id="noProduct" class="no-product" style="display:none;">Produk tidak ditemukan.</div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <span class="section-label">PEMESANAN</span>
+        <h2>Ingin memesan produk?</h2>
+        <p>Hubungi kami untuk informasi harga, stok dan pemesanan.</p>
+        <a href="kontak.html" class="btn btn-white">Hubungi Kami</a>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div>
+                <h3>SUPPLIER KANEBO</h3>
+                <p>Kain Lap Berkualitas untuk berbagai kebutuhan.</p>
+            </div>
+            <div>
+                <h3>Navigasi</h3>
+                <a href="index.html">Beranda</a>
+                <a href="tentang.html">Tentang Kami</a>
+                <a href="katalog.html">Katalog</a>
+                <a href="berita.html">Berita</a>
+                <a href="kontak.html">Kontak</a>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Supplier Kanebo. Semua Hak Dilindungi.</div>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
