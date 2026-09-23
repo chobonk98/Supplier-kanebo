@@ -1,0 +1,83 @@
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #111;
+    color: #ffffff;
+    padding: 35px 0 20px;
+}
+
+.footer-inner {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.footer-title {
+    margin: 0 0 10px;
+}
+
+.footer-text {
+    color: #bbb;
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-links a {
+    color: #bbb;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto 0;
+
+    padding-top: 20px;
+    border-top: 1px solid #333;
+
+    text-align: center;
+    color: #888;
+    font-size: 13px;
+}
+
+/* =========================
+   WHATSAPP
+========================= */
+
+.whatsapp-float {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #25d366;
+    color: #ffffff;
+
+    font-size: 24px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+    z-index: 999;
+}
