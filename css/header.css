@@ -1,0 +1,93 @@
+/* HEADER */
+.header {
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header-inner {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* LOGO - KHUSUS HEADER */
+.brand,
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+    flex-shrink: 0;
+}
+
+.brand img,
+.logo img {
+    width: 48px !important;
+    height: 48px !important;
+    max-width: 48px !important;
+    min-width: 48px;
+    object-fit: contain;
+    flex: 0 0 48px;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.brand-text strong,
+.brand > span,
+.logo > span {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.brand-text span {
+    margin-top: 2px;
+    color: #777;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+/* NAV */
+#navbar {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+#navbar a {
+    display: block;
+    padding: 8px 0;
+    color: #222;
+    font-size: 15px;
+    font-weight: 600;
+    transition: color .2s ease;
+}
+
+#navbar a:hover {
+    color: #d71920;
+}
+
+.menu-toggle,
+.menu-btn {
+    display: none;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #222;
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+    cursor: pointer;
+}

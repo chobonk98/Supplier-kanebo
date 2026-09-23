@@ -1,0 +1,152 @@
+/* TABLET */
+@media (max-width: 1000px) {
+    .features,
+    .product-grid,
+    .catalog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ANDROID */
+@media (max-width: 760px) {
+    .header-inner {
+        min-height: 64px;
+    }
+
+    .brand img,
+    .logo img {
+        width: 40px !important;
+        height: 40px !important;
+        max-width: 40px !important;
+        min-width: 40px;
+        flex-basis: 40px;
+    }
+
+    .brand-text strong,
+    .brand > span,
+    .logo > span {
+        font-size: 14px;
+    }
+
+    .brand-text span {
+        font-size: 10px;
+    }
+
+    .menu-toggle,
+    .menu-btn {
+        display: block;
+        flex: 0 0 42px;
+    }
+
+    #navbar {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        width: 100%;
+        padding: 5px 0;
+        background: #fff;
+        border-top: 1px solid #eee;
+        box-shadow: 0 5px 15px rgba(0,0,0,.08);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    #navbar.active {
+        display: flex;
+    }
+
+    #navbar a {
+        padding: 13px 5%;
+        border-bottom: 1px solid #eee;
+    }
+
+    .page-header {
+        padding: 42px 0;
+    }
+
+    .page-header h1 {
+        font-size: 27px;
+    }
+
+    .section {
+        padding: 45px 0;
+    }
+
+    .section-heading h2,
+    .section-title h2 {
+        font-size: 25px;
+    }
+
+    .features,
+    .product-grid,
+    .catalog-grid,
+    .contact-grid,
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .catalog-top {
+        width: 90%;
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .catalog-image img,
+    .product-card > img {
+        height: auto;
+        max-height: 320px;
+        object-fit: cover;
+    }
+
+    .news-card > img {
+        height: auto;
+        max-height: 320px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .whatsapp-float {
+        right: 15px;
+        bottom: 15px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* HP KECIL */
+@media (max-width: 400px) {
+    .brand img,
+    .logo img {
+        width: 36px !important;
+        height: 36px !important;
+        max-width: 36px !important;
+        min-width: 36px;
+        flex-basis: 36px;
+    }
+
+    .brand-text strong,
+    .brand > span,
+    .logo > span {
+        font-size: 13px;
+    }
+}

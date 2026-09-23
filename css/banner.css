@@ -1,0 +1,23 @@
+/* BANNER - TERPISAH DARI LOGO */
+.hero {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.hero picture {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-banner {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
