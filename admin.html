@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin Produk - Supplier Kanebo</title>
+<link rel="stylesheet" href="css/admin.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script>
+<script src="js/admin.js" defer></script>
+</head>
+<body>
+<main class="wrap">
+<section id="loginBox" class="card login">
+<div class="icon">🔐</div><h1>Admin Produk</h1><p>Login untuk mengelola katalog.</p>
+<form id="loginForm">
+<label>Email admin</label><input id="email" type="email" required>
+<label>Password</label><input id="password" type="password" required>
+<button>Login</button><p id="loginMessage" class="msg"></p>
+</form></section>
+
+<section id="dashboard" hidden>
+<header class="top"><div><small>PANEL ADMIN</small><h1>Kelola Produk</h1><p>Upload gambar dan deskripsi produk.</p></div><button id="logoutBtn" class="light">Keluar</button></header>
+<section class="card">
+<h2>Tambah Produk</h2>
+<form id="productForm">
+<label>Gambar produk</label><input id="productImage" type="file" accept="image/*" required>
+<div id="previewBox" class="preview" hidden><img id="previewImage"></div>
+<label>Deskripsi</label><textarea id="description" rows="5" required placeholder="Tulis deskripsi produk..."></textarea>
+<button id="uploadBtn">Upload Produk</button><p id="uploadMessage" class="msg"></p>
+</form></section>
+<div class="title"><div><h2>Produk Tersimpan</h2><p>Produk yang tersimpan di katalog.</p></div><button id="refreshBtn" class="light">Muat Ulang</button></div>
+<div id="productsGrid" class="grid"></div><p id="emptyMessage" class="empty" hidden>Belum ada produk.</p>
+</section>
+</main>
+</body></html>
