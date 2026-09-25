@@ -124,3 +124,78 @@
     }
 
 }
+/* Gambar produk bisa ditekan */
+.catalog-image img {
+    cursor: zoom-in;
+}
+
+/* Popup gambar besar */
+.image-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Popup aktif */
+.image-modal.show {
+    display: flex;
+}
+
+/* Gambar diperbesar */
+.image-modal img {
+    max-width: 95%;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* Tombol X */
+.image-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    color: #222;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 48px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 100000;
+}
+
+.image-close:active {
+    transform: scale(0.9);
+}
+
+/* HP */
+@media (max-width: 600px) {
+    .image-modal {
+        padding: 15px;
+    }
+
+    .image-modal img {
+        max-width: 100%;
+        max-height: 85vh;
+    }
+
+    .image-close {
+        top: 10px;
+        right: 10px;
+        width: 44px;
+        height: 44px;
+        font-size: 29px;
+        line-height: 44px;
+    }
+}
