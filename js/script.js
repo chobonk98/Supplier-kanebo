@@ -42,7 +42,7 @@ function searchProduct() {
         noProduct.style.display = found === 0 ? "block" : "none";
     }
 }
-```javascript
+
 /* =================================
    BANNER SLIDER
 ================================= */
@@ -101,4 +101,4 @@ document.addEventListener("DOMContentLoaded", function () {
     showBanner(0);
     resetBannerTimer();
 });
-```
+
